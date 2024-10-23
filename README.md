@@ -36,7 +36,7 @@ Aplique um mínimo de estilo usando as propriedades CSS para melhorar o layout d
 
 *Comentários:
 
-Adicione comentários no código para explicar o propósito de cada seção.
+Adicione comentários no código para explicar o propósito de cada seção. ✔
 
 *Critérios de Avaliação:
 
