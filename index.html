@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importa o arquivo CSS do Pico CSS para simplificar o desenvolvimento -->
+    <link rel="stylesheet" href="pico.min.css">
+    <!-- Cria um título para o formulário -->
+    <title>Formulário Básico</title>
+</head>
+
+<body>
+    <!-- Limita a largura do formulário para 30rem para não encher a tela -->
+    <main class="container" style="display: block; max-width: 30rem;">
+        <h2>Formulário Básico</h2>
+        <form>
+            <!-- Cria um campo de entrada de texto obrigatório para o nome do usuário do tipo texto -->
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required style="height: 1rem;">
+            <br>
+            <!-- Cria um campo de entrada de texto obrigatório para o e-mail do usuário do tipo e-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required style="height: 1rem;">
+            <br>
+            <!-- Cria um campo de entrada de texto obrigatório para a idade do usuário do tipo number com limitadores -->
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" min="18" max="100" required style="height: 1rem;">
+            <br>
+            <!-- Cria um campo de entrada de seleção obrigatório para o gênero do usuário do tipo select -->
+            <label for="gender">Gênero:</label>
+            <select id="gender" name="gender" required style="height: 1rem;">
+                <option value="">Selecione</option>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+                <option value="other">Outro</option>
+            </select>
+            <br>
+            <!-- Cria um campo de entrada de checkbox opcional para os interesses do usuário -->
+            <label for="interests">Interesses:</label>
+            <input type="checkbox" id="interests" name="interests" value="music"> Música
+            <input type="checkbox" id="interests" name="interests" value="movies"> Filmes
+            <input type="checkbox" id="interests" name="interests" value="books"> Livros
+            <br>
+            <!-- Cria um campo de entrada de texto opcional para a mensagem do usuário do tipo textarea -->
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" cols="30" style="height: 4rem;"></textarea>
+            <br>
+            <!-- Cria um campo de entrada de texto opcional para o link do usuário do tipo URL -->
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+
+</html>
